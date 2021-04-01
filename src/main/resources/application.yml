@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/tour_operators_db
+    username: root
+    password: root
+    initialization-mode: always
+
+app:
+  auth:
+    password: root
+    username: root
