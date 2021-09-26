@@ -5,11 +5,11 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: true
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/tour_operators_db
-    username: root
+    url: jdbc:postgresql://${MYSQL_HOST:localhost}:5432/tour_operators_db
+    username: postrges
     password: root
     initialization-mode: always
 
