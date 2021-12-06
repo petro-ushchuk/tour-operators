@@ -24,6 +24,7 @@ public interface MapperService {
     @Mapping(target = "participants", ignore = true)
     TourDto mapTourToTourDto(Tour tour);
 
+    @Mapping(target = "participants", ignore = true)
     List<TourDto> mapToursToTourDtos(List<Tour> tour);
 
     @Mapping(target = "authorities", ignore = true)
@@ -33,6 +34,8 @@ public interface MapperService {
     @Mapping(target = "repeatPassword", ignore = true)
     UserDto mapUserToUserDto(User user);
 
+    @Mapping(target = "tours", ignore = true)
+    @Mapping(target = "repeatPassword", ignore = true)
     List<UserDto> mapUsersToUserDtos(List<User> participants);
 
     @Mapping(target = "tours", ignore = true)

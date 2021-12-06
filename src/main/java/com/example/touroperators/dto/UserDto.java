@@ -9,8 +9,7 @@ import com.example.touroperators.dto.validation.group.OnUpdate;
 import com.example.touroperators.model.enums.Role;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -20,8 +19,7 @@ import java.util.List;
 
 import static com.fasterxml.jackson.annotation.JsonProperty.Access.WRITE_ONLY;
 
-@Getter
-@Setter
+@Data
 @FieldMatch(first = "password", second = "repeatPassword",
         groups = OnRegister.class, message = "{password.field.not.match}")
 

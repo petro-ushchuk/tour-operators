@@ -16,15 +16,17 @@ import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.ManyToMany;
 import javax.persistence.FetchType;
+import javax.persistence.Table;
 
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-@Entity
 @Getter
 @Setter
+@Table(name = "user_e")
+@Entity
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

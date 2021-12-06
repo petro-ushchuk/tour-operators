@@ -39,7 +39,7 @@ public interface TourApi {
 
     @ApiOperation("Create tour")
     @ApiResponse(code = 200, message = "OK", response = TourDto.class)
-    @PostMapping("/post")
+    @PostMapping("/create")
     @ResponseStatus(HttpStatus.OK)
     TourDto createTour(@RequestBody @Validated(OnCreate.class) TourDto tourDto);
 
@@ -57,7 +57,7 @@ public interface TourApi {
 
     @ApiOperation("Update tour")
     @ApiResponse(code = 200, message = "OK", response = TourDto.class)
-    @PutMapping("/put")
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.OK)
     TourDto updateTour(@RequestBody @Validated(OnUpdate.class) TourDto tourDto);
 

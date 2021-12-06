@@ -3,8 +3,7 @@ package com.example.touroperators.dto;
 import com.example.touroperators.dto.validation.group.OnCreate;
 import com.example.touroperators.dto.validation.group.OnUpdate;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -13,8 +12,7 @@ import java.util.List;
 
 import static com.fasterxml.jackson.annotation.JsonProperty.Access.READ_ONLY;
 
-@Getter
-@Setter
+@Data
 public class CompanyDto {
     @NotNull(groups = OnUpdate.class, message = "{user.id.blank}")
     @Null(groups = OnCreate.class, message = "{user.id.not.null}")

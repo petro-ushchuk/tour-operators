@@ -19,20 +19,22 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-validation:2.5.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
     implementation "io.springfox:springfox-boot-starter:3.0.0"
     implementation 'org.mapstruct:mapstruct:1.4.2.Final'
-    implementation 'commons-beanutils:commons-beanutils:1.9.4'
-    compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'mysql:mysql-connector-java'
-    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'commons-beanutils:commons-beanutils:20030211.134440'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    runtimeOnly 'org.postgresql:postgresql:42.2.5'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
-    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.5.4'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
+    testImplementation 'org.springframework.security:spring-security-test:5.5.1'
+    implementation 'org.jeasy:easy-random-core:4.0.0'
+
 }
 
 test {

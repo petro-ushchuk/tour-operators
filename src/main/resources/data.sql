@@ -1,11 +1,11 @@
 -- ADDING USERS --
-INSERT INTO user (username, password, role) VALUES ('traveler1', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 0);
-INSERT INTO user (username, password, role) VALUES ('traveler2', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 0);
-INSERT INTO user (username, password, role) VALUES ('traveler3', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 0);
+INSERT INTO user_e (username, password, role) VALUES ('traveler1', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 0);
+INSERT INTO user_e (username, password, role) VALUES ('traveler2', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 0);
+INSERT INTO user_e (username, password, role) VALUES ('traveler3', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 0);
 
-INSERT INTO user (username, password, role) VALUES ('company-head1', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 1);
-INSERT INTO user (username, password, role) VALUES ('company-head2', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 1);
-INSERT INTO user (username, password, role) VALUES ('company-head3', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 1);
+INSERT INTO user_e (username, password, role) VALUES ('company-head1', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 1);
+INSERT INTO user_e (username, password, role) VALUES ('company-head2', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 1);
+INSERT INTO user_e (username, password, role) VALUES ('company-head3', '$2a$10$5Fd8MNuTS49sEWX1kYzQP.JS.rrIZ29K51sGWSg7M8eQ5Avvj2GDO', 1);
 
 -- ADDING COMPANIES --
 INSERT INTO company (company_name, owner_id) VALUES('company1', 4);
